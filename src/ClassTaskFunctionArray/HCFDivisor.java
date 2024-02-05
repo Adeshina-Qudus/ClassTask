@@ -13,19 +13,13 @@ public class HCFDivisor {
 
         ArrayList<Integer> divisorNumber = new ArrayList<>();
         int counter = 0;
-        for (int count : numbers) {
-            for (int divisor = 2 ; divisor < 20; divisor++){
-                if (count % divisor == 0){
-                    counter++;
-                }
-                if (count % divisor != 0){
-                    divisor++;
-                }
-                if (counter == numbers.length){
-                    divisorNumber.add(count);
-                }
-            }
+        int divide = 1;
+
+        while (counter < numbers.length){
+           while (numbers[counter] % divide == 0){
+               divisorNumber.add(i);
+
+           }
         }
-        return divisorNumber;
     }
 }
